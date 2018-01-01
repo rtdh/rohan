@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<style>
+	
+	body * {margin:0;padding:0;box-sizing: border-box;}
+	.col-md-6 {margin:0;padding:0;}
+	.row {margin:20px 0}
+	.rowimg {box-shadow: 5px 5px 10px lightgray;}
+	#grad {}
+	.footer a {display: inline-block; text-decoration: none;font-size: 12px;margin-right:15px;color:black;border-right-color: red;}
+	.logo {font-size: 50px;font-family: cursive;}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-3">
+		<h1 class="logo">HONEY</h1>
+	</div>
+	<div class="col-md-9 text-right text-muted">
+		<h1>My Favourite App</h1>
+		<h4>Ramesh V</h4>
+	</div>
+</div>
+	<div class="row" data-aos="zoom-in-left" data-aos-duration="1500">
+		<img src="../ram/images/icomputer.jpeg" class="img-responsive" style="width:100%;height:400px;">
+	</div>
+	<div class="row text-center rowimg" id="grad">
+		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
+			<a href="javascript:void(0)"><img class="img-responsive" src="images/kittens_puppies.jpg" data-toggle="modal" data-target="#myModal" style="width:100%;height:100%;"></a>
+		</div>
+		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
+			<a href="javascript:void(0)"><img class="img-responsive" src="images/kitwithpuppy.jpg" data-toggle="modal" data-target="#myModal2" style="width:100%"></a>
+		</div>
+		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
+			<a href="javascript:void(0)"><img class="img-responsive" src="images/hqdefault.jpg" data-toggle="modal" data-target="#myModal3" style="width:100%"></a>
+		</div>
+	</div>
+	<div class="row">
+			
+				<div class="col-md-12 text-center footer">
+					<a href="#">Copyright</a>
+					<a href="#">Privacy</a>
+					<a href="#">Terms & Conditions</a>
+				</div>	
+			
+	</div>
+</div>
+
+
+<!-- myModal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Favourite App</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="images/kittens_puppies.jpg" style="width:100%">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ducimus sit quisquam maiores, voluptates quo! Doloribus quisquam facere quidem, voluptas nihil, cumque eos at dolore omnis, non obcaecati vel minus maiores, sit magnam! Sed iusto sapiente error rem quis nulla est cumque tempore soluta, debitis fugit magnam dolorum quod, repellendus deleniti obcaecati omnis libero porro dolorem corporis non facere necessitatibus eum facilis. Quam veniam cumque itaque quidem. Iure numquam consectetur facilis, deleniti est, inventore ullam facere quam ducimus unde, sit non! Veritatis atque alias neque error magni quam illo aliquam eos dignissimos. Quam voluptatum molestiae quisquam odit pariatur, dolorem asperiores.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- myModal2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Favourite App</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="images/kitwithpuppy.jpg" style="width:100%">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ducimus sit quisquam maiores, voluptates quo! Doloribus quisquam facere quidem, voluptas nihil, cumque eos at dolore omnis, non obcaecati vel minus maiores, sit magnam! Sed iusto sapiente error rem quis nulla est cumque tempore soluta, debitis fugit magnam dolorum quod, repellendus deleniti obcaecati omnis libero porro dolorem corporis non facere necessitatibus eum facilis. Quam veniam cumque itaque quidem. Iure numquam consectetur facilis, deleniti est, inventore ullam facere quam ducimus unde, sit non! Veritatis atque alias neque error magni quam illo aliquam eos dignissimos. Quam voluptatum molestiae quisquam odit pariatur, dolorem asperiores.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- myModal3 -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Favourite App</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="images/hqdefault.jpg" style="width:100%">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ducimus sit quisquam maiores, voluptates quo! Doloribus quisquam facere quidem, voluptas nihil, cumque eos at dolore omnis, non obcaecati vel minus maiores, sit magnam! Sed iusto sapiente error rem quis nulla est cumque tempore soluta, debitis fugit magnam dolorum quod, repellendus deleniti obcaecati omnis libero porro dolorem corporis non facere necessitatibus eum facilis. Quam veniam cumque itaque quidem. Iure numquam consectetur facilis, deleniti est, inventore ullam facere quam ducimus unde, sit non! Veritatis atque alias neque error magni quam illo aliquam eos dignissimos. Quam voluptatum molestiae quisquam odit pariatur, dolorem asperiores.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+	AOS.init({
+		
+		easing:'ease-in-out-sine'
+	});
+	
+</script>
+
+
+
+</body>
+</html>
