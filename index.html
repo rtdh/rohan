@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Rohan</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     
@@ -19,48 +19,90 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
 <style>
-	
+	* {margin:0;padding:0;box-sizing: border-box;}
+	.container-fluid {margin:0;padding:0;}
+	.container-fluid .row,.col-md-12,h1{margin:0;padding:0;}
 	body * {margin:0;padding:0;box-sizing: border-box;}
 	.col-md-6 {margin:0;padding:0;}
 	.row {margin:20px 0}
 	.rowimg {box-shadow: 5px 5px 10px lightgray;}
-	#grad {}
 	.footer a {display: inline-block; text-decoration: none;font-size: 12px;margin-right:15px;color:black;border-right-color: red;}
 	.logo {font-size: 50px;font-family: cursive;}
+	
+	.showcase {width:100vw;height:90vh;animation-name: slide_show;animation-duration: 15s;animation-iteration-count: infinite;animation-fill-mode: forwards;animation-timing-function: ease-in-out;}
+	.logo {font-family: sans-serif;color:royalblue;}
+	.logo a {text-decoration: none;color:white;}
+	
+@keyframes slide_show {
+	20% {background-image:url(rohan3.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	40% {background-image:url(rohan5.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	60% {background-image:url(rohan6.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	80% {background-image:url(rohan3.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	100% {background-image:url(rohan5.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
 </style>
 
 </head>
 <body>
-
-<div class="container">
+<div class="container-fluid">
+<header style="background-color:royalblue;">
 <div class="row">
-	<div class="col-md-3">
-		<h1 class="logo">HONEY</h1>
-	</div>
-	<div class="col-md-9 text-right text-muted">
-		<h1>My Favourite App</h1>
-		<h4>Ramesh V</h4>
+	<div class="col-md-12 text-center">
+		<h1 class="logo"><a href="#">ROHAN</a></h1>
 	</div>
 </div>
+</header>
+</div>
+<div class="container">
 	<div class="row" data-aos="zoom-in-left" data-aos-duration="1500">
-		<img src="../ram/images/icomputer.jpeg" class="img-responsive" style="width:100%;height:400px;">
+		<div class="col-md-12 showcase justify-content-center">
+			
+		</div>
+		
 	</div>
 	<div class="row text-center rowimg" id="grad">
-		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
-			<a href="javascript:void(0)"><img class="img-responsive" src="images/kittens_puppies.jpg" data-toggle="modal" data-target="#myModal" style="width:100%;height:100%;"></a>
+		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+			<a href="javascript:void(0)"><img class="img-responsive" src="rohan1.jpg" data-toggle="modal" data-target="#myModal" style="width:100%;height:200px;"></a>
+			<p>Click on the Image</p>
 		</div>
-		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
-			<a href="javascript:void(0)"><img class="img-responsive" src="images/kitwithpuppy.jpg" data-toggle="modal" data-target="#myModal2" style="width:100%"></a>
+		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+			<a href="javascript:void(0)"><img class="img-responsive" src="rohan2.jpg" data-toggle="modal" data-target="#myModal2" style="width:100%;height:200px;"></a>
+			<p>Click on the Image</p>
 		</div>
-		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
-			<a href="javascript:void(0)"><img class="img-responsive" src="images/hqdefault.jpg" data-toggle="modal" data-target="#myModal3" style="width:100%"></a>
+		<div class="col-md-4  p-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+			<a href="javascript:void(0)"><img class="img-responsive" src="rohan4.jpg" data-toggle="modal" data-target="#myModal3" style="width:100%;height:200px;"></a>
+			<p>Click on the Image</p>
 		</div>
 	</div>
 	<div class="row">
 			
 				<div class="col-md-12 text-center footer">
-					<a href="#">Copyright</a>
-					<a href="#">Privacy</a>
+					<a href="#">Copyright</a> |
+					<a href="#">Privacy</a> |
 					<a href="#">Terms & Conditions</a>
 				</div>	
 			
@@ -73,14 +115,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">My Favourite App</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Rohan with Puppy </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/kittens_puppies.jpg" style="width:100%">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ducimus sit quisquam maiores, voluptates quo! Doloribus quisquam facere quidem, voluptas nihil, cumque eos at dolore omnis, non obcaecati vel minus maiores, sit magnam! Sed iusto sapiente error rem quis nulla est cumque tempore soluta, debitis fugit magnam dolorum quod, repellendus deleniti obcaecati omnis libero porro dolorem corporis non facere necessitatibus eum facilis. Quam veniam cumque itaque quidem. Iure numquam consectetur facilis, deleniti est, inventore ullam facere quam ducimus unde, sit non! Veritatis atque alias neque error magni quam illo aliquam eos dignissimos. Quam voluptatum molestiae quisquam odit pariatur, dolorem asperiores.</p>
+        <img class="img-responsive" src="rohan1.jpg"style="width:100%">
+        <p> Rohan is with Puppy looking so nice</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -95,14 +137,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">My Favourite App</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Rohan as Krishna</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/kitwithpuppy.jpg" style="width:100%">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ducimus sit quisquam maiores, voluptates quo! Doloribus quisquam facere quidem, voluptas nihil, cumque eos at dolore omnis, non obcaecati vel minus maiores, sit magnam! Sed iusto sapiente error rem quis nulla est cumque tempore soluta, debitis fugit magnam dolorum quod, repellendus deleniti obcaecati omnis libero porro dolorem corporis non facere necessitatibus eum facilis. Quam veniam cumque itaque quidem. Iure numquam consectetur facilis, deleniti est, inventore ullam facere quam ducimus unde, sit non! Veritatis atque alias neque error magni quam illo aliquam eos dignissimos. Quam voluptatum molestiae quisquam odit pariatur, dolorem asperiores.</p>
+        <img class="img-responsive" src="rohan2.jpg" style="width:100%">
+        <p>Rohan as Lord Krishna</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -117,14 +159,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">My Favourite App</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Rohan as Lovely Boy</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/hqdefault.jpg" style="width:100%">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ducimus sit quisquam maiores, voluptates quo! Doloribus quisquam facere quidem, voluptas nihil, cumque eos at dolore omnis, non obcaecati vel minus maiores, sit magnam! Sed iusto sapiente error rem quis nulla est cumque tempore soluta, debitis fugit magnam dolorum quod, repellendus deleniti obcaecati omnis libero porro dolorem corporis non facere necessitatibus eum facilis. Quam veniam cumque itaque quidem. Iure numquam consectetur facilis, deleniti est, inventore ullam facere quam ducimus unde, sit non! Veritatis atque alias neque error magni quam illo aliquam eos dignissimos. Quam voluptatum molestiae quisquam odit pariatur, dolorem asperiores.</p>
+        <img class="img-responsive" src="rohan4.jpg" style="width:100%">
+        <p>Rohan looking very smart</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
